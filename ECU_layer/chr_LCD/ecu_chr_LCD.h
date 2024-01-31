@@ -1,7 +1,7 @@
 /* 
  * File:   ecu_chr_LCD.h
  * Author: Blu-Ray
- *
+ * LinkedIn : https://www.linkedin.com/in/mohamed-ewida-181151264/
  * Created on January 30, 2024, 1:33 PM
  */
 

@@ -1,7 +1,7 @@
 /* 
  * File:   7_segment.h
  * Author: mohamed.ewida
- *
+ * LinkedIn : https://www.linkedin.com/in/mohamed-ewida-181151264/
  * Created on October 10, 2023, 6:46 AM
  */
 
