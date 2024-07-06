@@ -18,10 +18,17 @@
 #include "7_segment/ecu_seven_segment.h"
 #include "Keypad/ecu_keypad.h"
 #include "chr_LCD/ecu_chr_LCD.h"
-
+#include "../MCAL_layer/Interrupt/mcal_external_interrupt.h"
+#include "../MCAL_layer/EEPROM/hal_eeprom.h"
+#include "../MCAL_layer/ADC/hal_adc.h"
 /******************* Section : Macro Declarations *******************/
-
-
+extern led_t green_led;
+extern led_t red_led;
+extern dc_motor_t motor1;
+extern pin_config_t buzzer;
+extern button_t btn1;
+extern Interrupt_INTx_t INT_obj ;
+extern chr_lcd_4bit_t lcd1;
 /******************* Section : Macro Functions Declarations *******************/
 
 
@@ -30,6 +37,7 @@
 
 /******************* Section : Functions Declarations *******************/
 void ecu_layer_Initialization(void);
+
 
 #endif	/* ECU_LAYER_INIT_H */
 

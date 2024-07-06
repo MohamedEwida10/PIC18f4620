@@ -57,6 +57,7 @@ STD_ReturnType ecu_keypad_get_value(const keypad_t *keypad, uint8 *value){
 STD_ReturnType ret = E_OK;
 uint8 rows = 0,columns = 0,clear_rows_counter = 0; 
 uint8 column_val = 0;
+*value = 0;
     if(NULL == keypad || NULL == value)
     {
         ret = E_NOT_OK;

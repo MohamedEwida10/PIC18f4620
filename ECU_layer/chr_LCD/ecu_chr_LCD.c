@@ -432,7 +432,7 @@ STD_ReturnType ret = E_OK;
     }
     else
     {
-        memset(str,'/0',4);
+        memset(str,'\0',4);
         sprintf(str,"%i",value);
     }
      return ret;
@@ -447,14 +447,23 @@ STD_ReturnType ret = E_OK;
  */
 STD_ReturnType convert_short_to_string(uint16 value,uint8 *str){
 STD_ReturnType ret = E_OK;
+uint8 temp_str[6] = {0};
+uint8 count = 0;
     if(NULL == str)
     {
         ret = E_NOT_OK;
     }
     else
     {
-        memset(str,'/0',6);
-        sprintf(str,"%i",value);
+        memset(str,' ',5);
+        str[5] = '\0';
+        sprintf(temp_str,"%i",value);
+        while(temp_str[count]){
+            str[count] = temp_str[count];
+            count++;
+        }
+
+        
     }
      return ret;
 }
@@ -474,7 +483,7 @@ STD_ReturnType ret = E_OK;
     }
     else
     {
-        memset(str,'/0',11);
+        memset(str,'\0',20);
         sprintf(str,"%i",value);
     }
      return ret;

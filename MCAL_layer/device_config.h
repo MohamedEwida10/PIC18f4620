@@ -18,7 +18,7 @@
 
 
 /******************* Section : MacroData Type Declarations *******************/
-#define _XTAL_FREQ 8000000ul
+#define _XTAL_FREQ 4000000ul
 
 /******************* Section : Functions Declarations *******************/
 

@@ -12,7 +12,7 @@
 #include "ecu_chr_LCD_cfg.h"
 #include "../../MCAL_layer/GPIO/hal_gpio.h"
 /******************* Section : Macro Declarations *******************/
-#define _LCD_CLEAR                      0x01
+#define _LCD_CLEAR                     0x01
 #define _LCD_RETURN_HOME               0x02
 #define _LCD_ENTRY_MODE                0x06
 #define _LCD_CURSER_OFF_DEPLAY_ON      0x0C
